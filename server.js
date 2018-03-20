@@ -43,6 +43,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/fotos', (req, res) => {
+  res.render('fotos.hbs', {
+    pageTitle: 'Fotos Page'
+  });
+});
+
 // /bad - send back json with errorMessage
 app.get('/bad', (req, res) => {
   res.send({
